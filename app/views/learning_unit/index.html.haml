@@ -1,0 +1,4 @@
+%h1 LearningUnit#index
+%p Find me in app/views/learning_unit/index.html.haml
+- @learning_units.each do |lu|
+	= link_to lu.title, lu.url
