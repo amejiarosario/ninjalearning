@@ -22,6 +22,7 @@ end
 
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 group :test, :development do
   gem 'rspec-rails'
@@ -30,8 +31,9 @@ group :test, :development do
 end
 
 group :test do
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', require: false
   gem 'database_cleaner'
+  gem 'spork', :git => 'git://github.com/sporkrb/spork.git'
 end
 
 # To use ActiveModel has_secure_password
@@ -41,7 +43,7 @@ end
 # gem 'jbuilder'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Deploy with Capistrano
 # gem 'capistrano'

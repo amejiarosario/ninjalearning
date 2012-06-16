@@ -1,5 +1,7 @@
 Ninjalearning::Application.routes.draw do
-  get "learning_unit/index"
+  #get "learning_unit/index"
+  
+  resource :learning_units
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
